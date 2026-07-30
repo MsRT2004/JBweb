@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>WebCraft Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=6">
+</head>
+<body>
+
+    <div id="loader"><div class="spinner"></div></div>
+
+    <nav>
+        <div class="wrap nav-inner">
+            <a href="#" class="logo">WebCraft</a>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="menu" id="navMenu">
+                <a href="#">Home</a>
+                <div class="dropdown">
+                    <a href="#">Postingan <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+                    <div class="dropdown-menu">
+                        <a href="#">Landing Page</a>
+                        <a href="#">Company Profile</a>
+                        <a href="#">Toko Online</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#">Halaman <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+                    <div class="dropdown-menu">
+                        <a href="#tentang">Tentang Kami</a>
+                        <a href="#kontak">Layanan</a>
+                    </div>
+                </div>
+                <a href="blog.html">Blog</a>
+                <button id="themeToggle" class="theme-btn" aria-label="Toggle Theme">
+                    <svg id="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="pointer-events: none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    <svg id="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none; pointer-events: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <span class="theme-text" style="pointer-events: none;">Mode Terang</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <div class="banner-track">
+            <img src="banner/ban1.png" alt="Banner 1" class="banner-img active">
+            <img src="banner/ban2.png" alt="Banner 2" class="banner-img">
+            <img src="banner/ban3.png" alt="Banner 3" class="banner-img">
+        </div>
+    </div>
+    <div class="ticker">
+        <div class="ticker-txt">✦ Selamat Datang di WebCraft Studio ✦ Dapatkan penawaran spesial untuk pembuatan website profesional bulan ini ✦ Hubungi kami sekarang untuk konsultasi gratis ✦</div>
+    </div>
+
+    <div class="sec wrap reveal" id="tentang">
+        <div class="sec-head">
+            <h2>Nilai Lebih Kami</h2>
+        </div>
+
+        <div class="stats-wrap reveal reveal-up" style="margin-top: 0; margin-bottom: 48px;">
+            <div class="stat-item">
+                <div class="stat-num"><span class="counter" data-target="10">0</span>+</div>
+                <div class="stat-label">TAHUN PENGALAMAN</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-num"><span class="counter" data-target="100">0</span>%</div>
+                <div class="stat-label">TRANSPARAN</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-num"><span class="counter" data-target="0">0</span>%</div>
+                <div class="stat-label">TANPA DEPOSIT</div>
+            </div>
+        </div>
+
+        <div class="grid-2">
+            <div class="card reveal reveal-left">
+                <div class="icn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <h3>Kualitas Terjamin</h3>
+                <p style="color: var(--text-sec); margin-top: 8px; font-size: 14px; line-height: 1.6;">Setiap project dikerjakan dengan standar kode terbaik, desain responsif, dan performa optimal untuk semua perangkat.</p>
+            </div>
+            <div class="card reveal reveal-right">
+                <div class="icn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                </div>
+                <h3>Support & Maintenance</h3>
+                <p style="color: var(--text-sec); margin-top: 8px; font-size: 14px; line-height: 1.6;">Dukungan teknis dan pemeliharaan website secara berkala untuk memastikan situs Anda selalu berjalan optimal.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="sec wrap reveal" id="produk">
+        <div class="sec-head">
+            <h2>Katalog Produk</h2>
+        </div>
+        <div class="grid-3">
+            <div class="p-card reveal reveal-up">
+                <img src="produk/landing-page.jpeg" class="p-img" alt="Landing Page">
+                <div class="p-body">
+                    <div class="p-title">Landing Page</div>
+                    <div class="p-price">Rp 500.000</div>
+                    <ul class="p-list">
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Desain Modern</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Responsive Design</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 1 Halaman Lengkap</li>
+                    </ul>
+                    <div class="p-btns">
+                        <a href="#" class="btn btn-blue">Detail</a>
+                        <a href="https://api.whatsapp.com/send?phone=6282122234316&text=Halo%2C%20saya%20tertarik%20dan%20ingin%20tanya%20detail%20promo%20untuk%20jasa%20*Landing%20Page*" target="_blank" class="btn btn-out">Pesan</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="p-card reveal reveal-up">
+                <img src="produk/Company Profile.png" class="p-img" alt="Company Profile">
+                <div class="p-body">
+                    <div class="p-title">Company Profile</div>
+                    <div class="p-price">Rp 1.500.000</div>
+                    <ul class="p-list">
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Multi Halaman</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> SEO Ready</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Contact Form</li>
+                    </ul>
+                    <div class="p-btns">
+                        <a href="#" class="btn btn-blue">Detail</a>
+                        <a href="https://api.whatsapp.com/send?phone=6282122234316&text=Halo%2C%20saya%20tertarik%20dan%20ingin%20tanya%20detail%20promo%20untuk%20jasa%20*Company%20Profile*" target="_blank" class="btn btn-out">Pesan</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-card reveal reveal-up">
+                <img src="produk/Toko Online.png" class="p-img" alt="Toko Online">
+                <div class="p-body">
+                    <div class="p-title">Toko Online</div>
+                    <div class="p-price">Rp 3.000.000</div>
+                    <ul class="p-list">
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Katalog Produk</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Payment Gateway</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Dashboard Admin</li>
+                    </ul>
+                    <div class="p-btns">
+                        <a href="#" class="btn btn-blue">Detail</a>
+                        <a href="https://api.whatsapp.com/send?phone=6282122234316&text=Halo%2C%20saya%20tertarik%20dan%20ingin%20tanya%20detail%20promo%20untuk%20jasa%20*Toko%20Online*" target="_blank" class="btn btn-out">Pesan</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-card reveal reveal-up">
+                <img src="produk/Blog Profesional.png" class="p-img" alt="Blog Profesional">
+                <div class="p-body">
+                    <div class="p-title">Blog Profesional</div>
+                    <div class="p-price">Rp 1.000.000</div>
+                    <ul class="p-list">
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Content Management System</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> SEO Optimized</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Responsive Layout</li>
+                    </ul>
+                    <div class="p-btns">
+                        <a href="#" class="btn btn-blue">Detail</a>
+                        <a href="https://api.whatsapp.com/send?phone=6282122234316&text=Halo%2C%20saya%20tertarik%20dan%20ingin%20tanya%20detail%20promo%20untuk%20jasa%20*Blog%20Profesional*" target="_blank" class="btn btn-out">Pesan</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-card reveal reveal-up">
+                <img src="produk/Web Portofolio.png" class="p-img" alt="Web Portofolio">
+                <div class="p-body">
+                    <div class="p-title">Web Portofolio</div>
+                    <div class="p-price">Rp 800.000</div>
+                    <ul class="p-list">
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Galeri Karya</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Animasi Modern</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Desain Eksklusif</li>
+                    </ul>
+                    <div class="p-btns">
+                        <a href="#" class="btn btn-blue">Detail</a>
+                        <a href="https://api.whatsapp.com/send?phone=6282122234316&text=Halo%2C%20saya%20tertarik%20dan%20ingin%20tanya%20detail%20promo%20untuk%20jasa%20*Web%20Portofolio*" target="_blank" class="btn btn-out">Pesan</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-card reveal reveal-up">
+                <img src="produk/Redesign Website.png" class="p-img" alt="Redesign Website">
+                <div class="p-body">
+                    <div class="p-title">Redesign Website</div>
+                    <div class="p-price">Rp 2.000.000</div>
+                    <ul class="p-list">
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Perbaikan UI/UX</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Speed Optimization</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Mobile First</li>
+                    </ul>
+                    <div class="p-btns">
+                        <a href="#" class="btn btn-blue">Detail</a>
+                        <a href="https://api.whatsapp.com/send?phone=6282122234316&text=Halo%2C%20saya%20tertarik%20dan%20ingin%20tanya%20detail%20promo%20untuk%20jasa%20*Redesign%20Website*" target="_blank" class="btn btn-out">Pesan</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-card reveal reveal-up">
+                <img src="produk/Custom Web App.png" class="p-img" alt="Custom Web App">
+                <div class="p-body">
+                    <div class="p-title">Custom Web App</div>
+                    <div class="p-price">Rp 5.000.000</div>
+                    <ul class="p-list">
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Full Stack Development</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> API Integration</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Database Custom</li>
+                    </ul>
+                    <div class="p-btns">
+                        <a href="#" class="btn btn-blue">Detail</a>
+                        <a href="https://api.whatsapp.com/send?phone=6282122234316&text=Halo%2C%20saya%20tertarik%20dan%20ingin%20tanya%20detail%20promo%20untuk%20jasa%20*Custom%20Web%20App*" target="_blank" class="btn btn-out">Pesan</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-card reveal reveal-up">
+                <img src="produk/Desain UI UX.png" class="p-img" alt="Desain UI/UX">
+                <div class="p-body">
+                    <div class="p-title">Desain UI/UX</div>
+                    <div class="p-price">Rp 1.200.000</div>
+                    <ul class="p-list">
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Wireframe Design</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Prototype Figma</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Design System</li>
+                    </ul>
+                    <div class="p-btns">
+                        <a href="#" class="btn btn-blue">Detail</a>
+                        <a href="https://api.whatsapp.com/send?phone=6282122234316&text=Halo%2C%20saya%20tertarik%20dan%20ingin%20tanya%20detail%20promo%20untuk%20jasa%20*Desain%20UI%2FUX*" target="_blank" class="btn btn-out">Pesan</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-card reveal reveal-up">
+                <img src="produk/Maintenance Bulanan.png" class="p-img" alt="Maintenance Bulanan">
+                <div class="p-body">
+                    <div class="p-title">Maintenance Bulanan</div>
+                    <div class="p-price">Rp 300.000/bln</div>
+                    <ul class="p-list">
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Update Konten</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Backup Rutin</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Security Patch</li>
+                    </ul>
+                    <div class="p-btns">
+                        <a href="#" class="btn btn-blue">Detail</a>
+                        <a href="https://api.whatsapp.com/send?phone=6282122234316&text=Halo%2C%20saya%20tertarik%20dan%20ingin%20tanya%20detail%20promo%20untuk%20jasa%20*Maintenance%20Bulanan*" target="_blank" class="btn btn-out">Pesan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sec wrap reveal">
+        <div class="rules">
+            <span class="badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 6px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                Syarat & Ketentuan
+            </span>
+            <h2>Aturan Pemesanan Jasa</h2>
+            <p style="color: var(--text-sec); margin: 8px 0 32px; font-size: 15px;">Harap baca dan pahami seluruh aturan berikut sebelum melakukan pemesanan jasa pembuatan website.</p>
+            
+            <div class="r-item reveal reveal-left">
+                <div class="r-num">1</div>
+                <div class="r-text">Klien <b>wajib menyediakan materi konten</b> (teks & gambar) sebelum proses development dimulai.</div>
+            </div>
+            <div class="r-item reveal reveal-left">
+                <div class="r-num">2</div>
+                <div class="r-text">Pembayaran tahap pertama (Down Payment) minimal 50% <b>tidak dapat dikembalikan</b> jika project dibatalkan sepihak.</div>
+            </div>
+            <div class="r-item reveal reveal-left">
+                <div class="r-num">3</div>
+                <div class="r-text">Revisi desain gratis diberikan maksimal 3 kali. Revisi tambahan akan dikenakan <b>biaya ekstra</b>.</div>
+            </div>
+            <div class="r-item reveal reveal-left">
+                <div class="r-num">4</div>
+                <div class="r-text">Serah terima source code dan akses admin dilakukan setelah <b>pelunasan 100%</b>.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sec wrap reveal">
+        <div class="sec-head">
+            <h2>Metode Pembayaran</h2>
+            <p style="color: var(--text-sec); margin-top: 12px;">Kami menerima pembayaran melalui berbagai platform untuk kemudahan transaksi Anda.</p>
+        </div>
+        <div class="pay-ticker-wrap" style="margin-top: 32px; overflow: hidden; white-space: nowrap; width: 100%; position: relative; mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent); -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);">
+            <div class="pay-ticker" style="display: inline-flex; gap: 32px; animation: payTicker 20s linear infinite;">
+                <!-- Set 1 -->
+                <div class="pay-box">
+                    <img src="pyment/qris.jpeg" alt="QRIS" class="scale-lg">
+                </div>
+                <div class="pay-box">
+                    <img src="pyment/dana.jpeg" alt="DANA">
+                </div>
+                <div class="pay-box">
+                    <img src="pyment/ovo.jpeg" alt="OVO">
+                </div>
+                <div class="pay-box">
+                    <img src="pyment/gopay.jpeg" alt="GoPay" class="scale-sm">
+                </div>
+                <div class="pay-box">
+                    <img src="pyment/shopypay.jpeg" alt="ShopeePay">
+                </div>
+                <div class="pay-box">
+                    <img src="pyment/seabank.jpeg" alt="SeaBank" class="scale-md">
+                </div>
+                <div class="pay-box">
+                    <img src="pyment/jago.jpeg" alt="Bank Jago">
+                </div>
+                <!-- Set 2 (Duplikat untuk efek infinite scroll) -->
+                <div class="pay-box">
+                    <img src="pyment/qris.jpeg" alt="QRIS" class="scale-lg">
+                </div>
+                <div class="pay-box">
+                    <img src="pyment/dana.jpeg" alt="DANA">
+                </div>
+                <div class="pay-box">
+                    <img src="pyment/ovo.jpeg" alt="OVO">
+                </div>
+                <div class="pay-box">
+                    <img src="pyment/gopay.jpeg" alt="GoPay" class="scale-sm">
+                </div>
+                <div class="pay-box">
+                    <img src="pyment/shopypay.jpeg" alt="ShopeePay">
+                </div>
+                <div class="pay-box">
+                    <img src="pyment/seabank.jpeg" alt="SeaBank" class="scale-md">
+                </div>
+                <div class="pay-box">
+                    <img src="pyment/jago.jpeg" alt="Bank Jago">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sec wrap reveal" id="faq">
+        <div class="sec-head">
+            <h2>Pertanyaan Umum (FAQ)</h2>
+            <p style="color: var(--text-sec); margin-top: 12px;">Jawaban atas beberapa pertanyaan yang sering diajukan oleh klien kami.</p>
+        </div>
+        <div class="faq-wrap" style="margin-top: 32px; max-width: 800px; margin-left: auto; margin-right: auto;">
+            <div class="faq-item" style="background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; overflow: hidden;">
+                <button class="faq-btn" style="width: 100%; text-align: left; padding: 16px 20px; background: none; border: none; color: var(--text-main); font-size: 16px; font-weight: 500; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                    Berapa lama proses pembuatan website?
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition: transform 0.3s ease;"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="faq-content" style="padding: 0 20px;">
+                    <p style="color: var(--text-sec); padding-bottom: 16px; font-size: 14px; line-height: 1.6;">Proses pembuatan website bervariasi tergantung pada tingkat kompleksitasnya. Untuk Landing Page biasanya 3-5 hari kerja, sedangkan untuk Custom Web App bisa memakan waktu 2-4 minggu setelah materi lengkap kami terima.</p>
+                </div>
+            </div>
+            <div class="faq-item" style="background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; overflow: hidden;">
+                <button class="faq-btn" style="width: 100%; text-align: left; padding: 16px 20px; background: none; border: none; color: var(--text-main); font-size: 16px; font-weight: 500; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                    Apakah saya mendapatkan akses Admin/Source Code?
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition: transform 0.3s ease;"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="faq-content" style="padding: 0 20px;">
+                    <p style="color: var(--text-sec); padding-bottom: 16px; font-size: 14px; line-height: 1.6;">Ya, setelah project selesai dan pelunasan dilakukan 100%, Anda akan mendapatkan akses penuh ke halaman admin (CMS) beserta penyerahan source code jika diperlukan.</p>
+                </div>
+            </div>
+            <div class="faq-item" style="background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; overflow: hidden;">
+                <button class="faq-btn" style="width: 100%; text-align: left; padding: 16px 20px; background: none; border: none; color: var(--text-main); font-size: 16px; font-weight: 500; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                    Apakah bisa request fitur khusus (Custom)?
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition: transform 0.3s ease;"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="faq-content" style="padding: 0 20px;">
+                    <p style="color: var(--text-sec); padding-bottom: 16px; font-size: 14px; line-height: 1.6;">Tentu bisa. Anda dapat berkonsultasi terlebih dahulu mengenai fitur apa yang dibutuhkan. Kami akan memberikan estimasi biaya dan waktu tambahan untuk fitur custom tersebut.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sec wrap reveal" id="kontak">
+        <div class="sec-head">
+            <span class="badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 6px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Pusat Bantuan
+            </span>
+            <h2>Hubungi Kami</h2>
+            <p style="color: var(--text-sec); margin-top: 12px;">Tim kami siap membantu Anda. Jam Operasional: Senin - Minggu (08:00 - 20:00 WIB)</p>
+        </div>
+        <div class="contact-wrap">
+            <div class="c-box">
+                <span class="c-icn">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                </span>
+                <h3>Konsultasi Project</h3>
+                <p>Dapatkan estimasi harga, detail spesifikasi, dan solusi terbaik untuk website Anda.</p>
+                <a href="https://api.whatsapp.com/send?phone=6282122234316&text=Halo%20Admin%2C%20saya%20ingin%20konsultasi%20pembuatan%20website" target="_blank" class="btn btn-out" style="width: 100%;">Chat Sales Admin</a>
+            </div>
+            <div class="c-box">
+                <span class="c-icn">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                </span>
+                <h3>Support Teknis</h3>
+                <p>Bantuan kendala website, maintenance rutin, atau upgrade sistem yang sedang berjalan.</p>
+                <a href="https://api.whatsapp.com/send?phone=6282122234316&text=Halo%20Admin%2C%20saya%20butuh%20bantuan%20support%20teknis%20website" target="_blank" class="btn btn-out" style="width: 100%;">Hubungi Support</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="wrap f-grid">
+            <div>
+                <a href="#" class="logo">WebCraft</a>
+                <p>Studio kreatif untuk solusi website & desain profesional. Komitmen kami adalah memberikan hasil maksimal untuk bisnis Anda.</p>
+                <div class="soc">
+                    <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                    <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                    <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+                </div>
+            </div>
+            <div class="f-links">
+                <h4>Navigasi Utama</h4>
+                <a href="#">Beranda</a>
+                <a href="#">Layanan Kami</a>
+                <a href="#">Portofolio</a>
+                <a href="#">Karir</a>
+            </div>
+            <div class="f-links">
+                <h4>Pusat Informasi</h4>
+                <a href="#">Syarat & Ketentuan</a>
+                <a href="#">Kebijakan Privasi</a>
+                <a href="#">Lokasi Dealer</a>
+                <a href="#">FAQ Bantuan</a>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 30px;">
+            <button onclick="window.scrollTo(0,0)" class="btn btn-out" style="padding: 8px 16px; font-size: 13px;">⬆ Kembali ke Atas</button>
+        </div>
+        <div class="copy">
+            &copy; 2026 WebCraft Studio. Hak Cipta Dilindungi Undang-Undang.
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=6282122234316&text=Halo%20WebCraft%2C%20saya%20ingin%20bertanya%20seputar%20jasa%20website" target="_blank" class="wa-float" aria-label="Chat WhatsApp">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-grid">
+                <div class="modal-img-wrap">
+                    <img id="m-img" src="" alt="Product">
+                </div>
+                <div class="modal-info">
+                    <h3 id="m-title">Title</h3>
+                    <div class="m-price" id="m-price">Price</div>
+                    <p class="m-desc">Solusi digital profesional yang dirancang khusus untuk meningkatkan konversi dan visibilitas bisnis Anda secara online.</p>
+                    <ul id="m-list" class="m-list p-list"></ul>
+                    <a id="m-wa" href="#" target="_blank" class="btn btn-blue" style="width: 100%; margin-top: 24px;">Pesan Sekarang via WA</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js?v=2"></script>
+</body>
+</html>
